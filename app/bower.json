@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/ava-project/ava-interface",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.5.0",
+    "angular": "~1.5.0"
+  }
+}
