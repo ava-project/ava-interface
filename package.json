@@ -1,0 +1,25 @@
+{
+  "name": "ava-interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ava-project/ava-interface.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ava-project/ava-interface/issues"
+  },
+  "homepage": "https://github.com/ava-project/ava-interface#readme",
+  "devDependencies": {
+    "asar": "^0.9.1",
+    "electron-prebuilt": "^0.36.7",
+    "fs-jetpack": "^0.7.1",
+    "rcedit": "^0.4.0"
+  }
+}
