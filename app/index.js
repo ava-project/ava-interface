@@ -1,3 +1,4 @@
+var electron = require('electron');
 
 // Module to control application life.
 var app = require('app');
@@ -17,8 +18,9 @@ app.on('window-all-closed', function () {
 // initialization and is ready to create browser windows.
 app.on('ready', function () {
 
+  var screenSize = electron.screen.getPrimaryDisplay().workAreaSize;
   // Create the browser window.
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({ width: Math.round((screenSize.width / 3) * 2), height: Math.round((screenSize.height / 3) * 2.5), frame: false, 'titleBarStyle': 'hidden' });
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');

@@ -1,11 +1,24 @@
 <!doctype html>
-<html ng-app="ava-interface">
+<html ng-app="ava">
 	<head>
 		<meta charset="utf-8">
 		<title>Interface AVA</title>
-		<!-- <link rel="stylesheet" href="index.css"> -->
+
+		<!-- NOTE: On concatene+minifie ou zerma on s'en bats les couilles c'est en local ? -->
+		<script src="libs/angular/angular.min.js" charset="utf-8"></script>
+		<script src="libs/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+		<script src="src/app.js" charset="utf-8"></script>
+		<script src="src/routes.js" charset="utf-8"></script>
+		<script src="src/components/login/loginController.js" charset="utf-8"></script>
+		<script src="src/components/plugins/pluginsController.js" charset="utf-8"></script>
+		<script src="src/components/settings/settingsController.js" charset="utf-8"></script>
+
+		<link src="src/components/login/loginStyle.css" rel="stylesheet">
+		<link src="src/components/dashboard/dashboardStyle.css" rel="stylesheet">
+		<link src="src/components/plugins/pluginsStyle.css" rel="stylesheet">
+		<link src="src/components/settings/settingsStyle.css" rel="stylesheet">
 	</head>
 	<body>
-        <div ng-view></div>
+        <main ui-view></main>
 	</body>
 </html>

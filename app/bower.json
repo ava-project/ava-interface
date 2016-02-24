@@ -1,10 +1,9 @@
 {
-  "name": "app",
+  "name": "AVA",
   "description": "",
   "main": "index.js",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/ava-project/ava-interface",
-  "moduleType": [],
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,7 +12,11 @@
     "tests"
   ],
   "dependencies": {
-    "angular-route": "~1.5.0",
-    "angular": "~1.5.0"
-  }
+      "angular": "~1.5.0",
+      "angular-ui-router": "*"
+  },
+  "authors": [
+      "Dorian Amouroux <amouro_d@epitech.eu>",
+      "Emmanuel Chambon <chambo_e@epitech.eu>"
+  ]
 }

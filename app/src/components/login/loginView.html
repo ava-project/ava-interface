@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<section>
+    <div>
+        <img src="assets/img/ava.jpg" alt="logo"/>
+        <h3>
+            Zerma connecte toi frère.</h3>
+        <form ng-submit="loginctrl.submit()">
+            <input name="email" ng-model="loginctrl.user.mail" placeholder="Email" required type="email">
+            <input name="password" ng-model="loginctrl.user.password" placeholder="Password" required type="password">
+            <button type="submit">
+                <span ng-show="!loginctrl.asked">Login</span>
+                <svg ng-show="loginctrl.asked" height="24" stroke="#FFF" viewbox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" stroke-width="2" transform="translate(1 1)">
+                        <circle cx="18" cy="18" r="18" stroke-opacity=".5"/>
+                        <circle class="loadsvg" cx="18" cy="18" r="18"/>
+                    </g>
+                </svg>
+            </button>
+        </form>
+    </div>
+</section>
