@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <div>
-    <h2>Plugins</h2>
-    <h3>Installed:</h3>
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
+    <h2 style="color: #42a5f5">Plugins</h2>
+    <h4 class="center-align">Installed</h4>
+    <div class="col s12 m8" style="margin-left:10px; margin-right:10px">
         <div class="z-depth-1 grey lighten-5" ng-repeat="plugin in plugctrl.installedPlugins">
             <div class="row valign-wrapper">
                 <div class="col s3">
@@ -10,7 +10,7 @@
                 </div>
                 <div class="col s6">
                     <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
-                    Installed on: <span ng-bind="::plugin.installationDate"></span>
+                    Installed on: <span ng-bind="::plugin.installationDate | date"></span>
                 </div>
                 <div class="col s3 switch">
                     <label>
