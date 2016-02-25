@@ -21,6 +21,10 @@
     "electron-prebuilt": "^0.36.7",
     "fs-jetpack": "^0.7.1",
     "gulp": "^3.9.1",
-    "rcedit": "^0.4.0"
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "rcedit": "^0.4.0",
+    "stream-combiner2": "^1.1.1"
   }
 }
