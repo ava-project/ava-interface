@@ -32,6 +32,7 @@
             url: 'https://www.sublimetext.com/'
         }];
         vm.install = install;
+        vm.delete = del;
         // };
 
         function install(plugin) {
@@ -40,6 +41,15 @@
                 vm.availablePlugins.splice(plugin, 1);
                 plug.installationDate = new Date();
                 vm.installedPlugins.push(plug);
+            }
+        }
+
+        function del(plugin) {
+            if (plugin > -1) {
+                var plug = vm.installedPlugins[plugin];
+                vm.installedPlugins.splice(plugin, 1);
+                delete plug.installationDate;
+                vm.availablePlugins.push(plug);
             }
         }
     }
