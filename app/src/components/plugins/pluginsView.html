@@ -6,7 +6,7 @@
         <div class="z-depth-1 grey lighten-5" ng-repeat="plugin in plugctrl.installedPlugins">
             <div class="row valign-wrapper">
                 <div class="col s3">
-                    <img src="{{::plugin.img}}" height="64px" width="64px" />
+                    <img ng-src="{{::plugin.img}}" height="64px" width="64px" />
                 </div>
                 <div class="col s6">
                     <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
@@ -24,10 +24,20 @@
         </div>
     </div>
     <h3>Available:</h3>
-    <ul>
-        <li ng-repeat="plugin in plugctrl.availablePlugins">
-            <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
-            <button type="button" name="install-button" ng-click="plugctrl.install($index)">Install</button>
-        </li>
-    </ul>
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="z-depth-1 grey lighten-5" ng-repeat="plugin in plugctrl.availablePlugins">
+            <div class="row valign-wrapper">
+                <div class="col s3">
+                    <img ng-src="{{::plugin.img}}" height="64px" width="64px" />
+                </div>
+                <div class="col s6">
+                    <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
+                    Installed on: <span ng-bind="::plugin.installationDate"></span>
+                </div>
+                <div class="col s3">
+                    <a class="waves-effect waves-light btn"><i class="material-icons left">file_download</i>Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

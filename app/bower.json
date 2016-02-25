@@ -12,11 +12,12 @@
     "tests"
   ],
   "dependencies": {
-      "angular": "~1.5.0",
-      "angular-ui-router": "*"
+    "angular": "~1.5.0",
+    "angular-ui-router": "*",
+    "Materialize": "materialize#^0.97.5"
   },
   "authors": [
-      "Dorian Amouroux <amouro_d@epitech.eu>",
-      "Emmanuel Chambon <chambo_e@epitech.eu>"
+    "Dorian Amouroux <amouro_d@epitech.eu>",
+    "Emmanuel Chambon <chambo_e@epitech.eu>"
   ]
 }

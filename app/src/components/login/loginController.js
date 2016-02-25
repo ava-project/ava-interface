@@ -7,6 +7,8 @@
     LoginController.$inject = ['$timeout', '$state'];
 
     function LoginController($timeout, $state) {
+        $state.go('dashboard.content');
+        return ;
         var vm = this;
 
         // NOTE: $onInit is not yet supported by ui-router
