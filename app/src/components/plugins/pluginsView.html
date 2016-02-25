@@ -2,12 +2,27 @@
 <div>
     <h2>Plugins</h2>
     <h3>Installed:</h3>
-    <ul>
-        <li ng-repeat="plugin in plugctrl.installedPlugins">
-            <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
-            Installed on: <span ng-bind="::plugin.installationDate"></span>
-        </li>
-    </ul>
+    <div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="z-depth-1 grey lighten-5" ng-repeat="plugin in plugctrl.installedPlugins">
+            <div class="row valign-wrapper">
+                <div class="col s3">
+                    <img src="{{::plugin.img}}" height="64px" width="64px" />
+                </div>
+                <div class="col s6">
+                    <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
+                    Installed on: <span ng-bind="::plugin.installationDate"></span>
+                </div>
+                <div class="col s3 switch">
+                    <label>
+                        Off
+                        <input type="checkbox" checked>
+                        <span class="lever"></span>
+                        On
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
     <h3>Available:</h3>
     <ul>
         <li ng-repeat="plugin in plugctrl.availablePlugins">

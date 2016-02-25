@@ -10,24 +10,26 @@
         // NOTE: $onInit is not yet supported by ui-router
         // vm.$onInit = function() {
         vm.installedPlugins = [{
-            name: 'Pornhub',
+            name: 'Firefox',
             dev: 'jeannustre',
+            img: 'https://cdn1.iconfinder.com/data/icons/appicns/513/appicns_Firefox.png',
             installationDate: new Date(),
-            url: 'https://pornhub.com'
+            url: 'https://firefox.com'
         }, {
-            name: 'Cuisine',
+            name: 'Google-Chrome',
             dev: 'amouro_d',
+            img: 'https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png',
             installationDate: new Date(),
-            url: 'https://jemetouche.online'
+            url: 'https://google.com'
         }];
         vm.availablePlugins = [{
-            name: 'Gaytube',
+            name: 'Atom',
             dev: 'jeannustre',
-            url: 'https://mescouilll.es'
+            url: 'https://atom.io'
         }, {
-            name: 'Zerma',
+            name: 'Sublime Text',
             dev: 'chambo_e_d',
-            url: null
+            url: 'https://www.sublimetext.com/'
         }];
         vm.install = install;
         // };
