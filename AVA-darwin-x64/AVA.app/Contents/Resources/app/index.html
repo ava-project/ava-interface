@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="ava">
+	<head>
+		<meta charset="utf-8">
+		<title>Interface AVA</title>
+
+		<!-- NOTE: On concatene+minifie ou zerma on s'en bats les couilles c'est en local ? -->
+		<script src="libs/angular/angular.min.js" charset="utf-8"></script>
+		<script src="libs/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+		<script src="src/app.js" charset="utf-8"></script>
+		<script src="src/routes.js" charset="utf-8"></script>
+		<script src="src/components/login/loginController.js" charset="utf-8"></script>
+		<script src="src/components/plugins/pluginsController.js" charset="utf-8"></script>
+		<script src="src/components/settings/settingsController.js" charset="utf-8"></script>
+		<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/Materialize/dist/js/materialize.min.js"></script>
+
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="assets/css/dist.css"/>
+		<link type="text/css" rel="stylesheet" href="libs/Materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+
+		<meta http-equiv="Cache-Control" content="no-store" />
+
+	</head>
+	<body>
+        <main ui-view></main>
+	</body>
+</html>
