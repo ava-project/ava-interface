@@ -44,6 +44,7 @@
             img: 'http://2.bp.blogspot.com/-nrgKz1hgc00/VKeWCHbw_aI/AAAAAAAAAKQ/yh1SfF9GB_E/s1600/logo-sublime-3.png'
         }];
         vm.install = install;
+        vm.delete = del;
         // };
 
         function install(plugin) {
@@ -52,6 +53,15 @@
                 vm.availablePlugins.splice(plugin, 1);
                 plug.installationDate = new Date();
                 vm.installedPlugins.push(plug);
+            }
+        }
+
+        function del(plugin) {
+            if (plugin > -1) {
+                var plug = vm.installedPlugins[plugin];
+                vm.installedPlugins.splice(plugin, 1);
+                delete plug.installationDate;
+                vm.availablePlugins.push(plug);
             }
         }
     }
