@@ -51,6 +51,7 @@
             if (plugin > -1) {
                 var plug = vm.availablePlugins[plugin];
                 vm.availablePlugins.splice(plugin, 1);
+                $rootScope.coreClient.write(plug.name + ':true');
                 plug.installationDate = new Date();
                 vm.installedPlugins.push(plug);
             }
@@ -60,6 +61,7 @@
             if (plugin > -1) {
                 var plug = vm.installedPlugins[plugin];
                 vm.installedPlugins.splice(plugin, 1);
+                $rootScope.coreClient.write(plug.name + ':false');
                 delete plug.installationDate;
                 vm.availablePlugins.push(plug);
             }

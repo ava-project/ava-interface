@@ -23,6 +23,7 @@
 
 	</head>
 	<body>
-        <main ui-view></main>
+        <main ui-view ng-if="$root.isConnectedToCore"></main>
+        <main ng-if="$root.isConnectedToCore">Ava core is not launched</main>
 	</body>
 </html>
