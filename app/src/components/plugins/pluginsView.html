@@ -10,7 +10,7 @@
                         <div class="col s2">
                             <img ng-src="{{::plugin.img}}" height="64px" width="64px"/>
                         </div>
-                        <div class="col s6">
+                        <div class="col s5">
                             <a ng-href="{{::plugin.url}}" ng-bind="::plugin.name"></a>
                             Installed on:
                             <span ng-bind="::plugin.installationDate | date"></span>
@@ -22,6 +22,9 @@
                                 <span class="lever grey"></span>
                                 On
                             </label>
+                        </div>
+                        <div ng-click="plugctrl.delete($index)" class="col s1 delete-plugin">
+                            X
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-(function () {
+(function() {
     'use strict';
 
     angular.module('ava', ['ui.router'])
@@ -11,21 +11,19 @@
             $rootScope.isConnectedToCore = false;
 
             var net = require('net');
-            $rootScope.coreClient = net.createConnection("/tmp/ava_socket");
-
-            $rootScope.coreClient.on("connect", function () {
+            $rootScope.coreClient = net.createConnection("/tmp/ava_socket", function() {
                 $rootScope.isConnectedToCore = true;
             });
 
-            $rootScope.coreClient.on('data', function (data) {
+            $rootScope.coreClient.on('data', function(data) {
                 console.log('Received from core:' + data)
             });
 
-            $rootScope.coreClient.on('close', function () {
+            $rootScope.coreClient.on('close', function() {
                 $rootScope.isConnectedToCore = false;
             });
 
-            $rootScope.$on('decomagueule', function () {
+            $rootScope.$on('decomagueule', function() {
                 $state.go('login');
             });
         }]);
