@@ -4,7 +4,9 @@
     angular.module('ava')
         .controller('PluginsController', PluginsController);
 
-    function PluginsController() {
+    PluginsController.$inject = ['$rootScope'];
+
+    function PluginsController($rootScope) {
         var vm = this;
 
         // NOTE: $onInit is not yet supported by ui-router
