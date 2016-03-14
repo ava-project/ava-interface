@@ -1,16 +1,18 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "hammer": "0.0.5",
-    "jQuery": "^1.7.4",
-    "jquery": "^2.2.1"
-  }
+    "name": "app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "pack": "build",
+        "dist": "build"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "hammer": "0.0.5",
+        "jQuery": "^1.7.4",
+        "jquery": "^2.2.1"
+    }
 }
